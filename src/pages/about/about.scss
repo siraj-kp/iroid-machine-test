@@ -1,0 +1,89 @@
+@import "../../colors.scss";
+
+@mixin image-position {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 100%;
+}
+
+.main-content {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+.happiness-header {
+  font-family: "Roboto";
+  font-weight: 500;
+  position: relative;
+  &::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: $lightPinkColor;
+    position: absolute;
+    opacity: 0.56;
+    left: 0;
+    bottom: 0;
+    transform: translate(-42px, 0px);
+  }
+  &::after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #940d1b;
+    opacity: 0.56;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(47px, -24px);
+  }
+}
+
+.happiness-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    line-height: 22px;
+    display: flex;
+    font-size: 14px;
+
+    &::before {
+      content: url(../../assets/images/tick-green.svg);
+      width: 17px;
+      height: 17px;
+      margin-right: 15px;
+      position: relative;
+      top: 4px;
+    }
+  }
+}
+
+.vision-frame {
+  background-image: url(../../assets/images/vision-frame.png);
+  @include image-position;
+  height: 304px;
+
+}
+
+.tea-cup {
+  background-image: url(../../assets/images/teaandtable.png);
+  @include image-position;
+  height: 152px;
+}
+
+.mission-frame {
+  background-image: url(../../assets/images/mission-frame.png);
+  @include image-position;
+  height: 486px;
+  
+}
+
+.video-bg {
+  background-image: url(../../assets/images/video-frame.png);
+  height: 400px;
+  @include image-position;
+}

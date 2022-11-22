@@ -1,0 +1,64 @@
+@import "../../colors.scss";
+
+.footer {
+  font-family: "Poppins";
+  width: 100%;
+  background-color: $lightBlackColor;
+  border: 1px solid $grayColor;
+  .fast-delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .f-13 {
+    font-weight: 400;
+    font-size: 13px !important;
+  }
+  .f-12 {
+    font-weight: 300;
+    font-size: 12px !important;
+  }
+  .footer-list-header {
+    font-weight: 400;
+    font-size: 15px !important;
+  }
+  .footer-list {
+    font-weight: 400;
+    font-size: 11px;
+    list-style-type: none;
+    line-height: 30px;
+  }
+  input[type="text"]::placeholder {
+    font-size: 11px !important;
+    font-weight: 300;
+  }
+  .subscribe-btn {
+    font-size: 11px;
+    font-weight: 500;
+    color: $whiteColor;
+    background-color: $mediumGrayColor;
+  }
+  .icon-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid $whiteColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright {
+    font-size: 11px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .fast-delivery {
+    align-items: start !important;
+    margin-bottom: 20px !important;
+  }
+}
